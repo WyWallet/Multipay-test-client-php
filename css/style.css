@@ -1,0 +1,659 @@
+
+* {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important;
+}
+body {
+    position: relative;
+    background: #ffffff url(../img/bg_pattern_dark.png) left top repeat;
+    color: #000;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important; 
+    font-weight: 300;
+    padding: 0px;
+    margin: 5px;
+}
+
+body.light {
+    background: #ffffff url(../img/bg_pattern_light.png) left top repeat;
+}
+
+body.standalone {
+    background: #ffffff;
+}
+
+table {
+    padding: 0px;
+    margin: px;
+}
+
+td.center {
+  margin-left:auto; 
+  margin-right:auto;
+}
+
+.merchantLogoContainer {
+    display: none;
+}
+.standalone .merchantLogoContainer {
+    display: block;
+    margin: 50px auto 0px auto;
+    width: 100%;
+    max-width: 974px;
+    position: relative;
+}
+.standalone .WyWalletContainer {
+    background: #ffffff url(../img/bg_pattern_dark.png) left top repeat;
+    margin: 0px auto;
+    border: 1px solid #a4a4a4;
+    float: none;
+}
+.standalone.light .WyWalletContainer {
+    background: #ffffff url(../img/bg_pattern_light.png) left top repeat;
+}
+.WyWalletContainer {
+    float: left;
+    width: 100%;
+    max-width: 974px;
+    position: relative;
+    padding: 10px;
+}
+.row {
+    float: left;
+    width: 100%;
+    position: relative;
+}
+.col {
+    float: left;
+    position: relative;
+}
+.col.col1 {
+    width: 8.333333333333334%;
+}
+.col.col2 {
+    width: 16.666666666666668%;
+}
+.col.col3 {
+    width: 25%;
+}
+.col.col4 {
+    width: 33.333333333333336%;
+}
+.col.col5 {
+    width: 41.66666666666667%;
+}
+.col.col6 {
+    width: 50%;
+}
+.col.col7 {
+    width: 58.333333333333336%;
+}
+.col.col8 {
+    width: 66.66666666666667%;
+}
+.col.col9 {
+    width: 75%;
+}
+.col.col10 {
+    width: 83.33333333333334%;
+}
+.col.col11 {
+    width: 91.66666666666667%;
+}
+.col.col12 {
+    width: 100%;
+}
+.initAsHidden {
+    display: none !important;
+}
+/* SECTIONS */
+.merchantLogo {
+    display: inherit;
+    margin: 7px;
+    max-height: 48px;
+    max-width: 960px;
+}
+#header {
+    width: 12%;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+#header .logo {
+    border: 0;
+    float: left;
+    width: 100%;
+    max-width: 90px;
+}
+#header .messages {
+    position: absolute;
+    right: 0px;
+    bottom: -8px;
+    width: 180px;
+    display: none;
+}
+#manualAppLaunch {
+    display: none;
+    width: auto;
+    margin-top: 10px;
+    height: 60px;
+    border-bottom: 1px solid #bebebe;
+}
+#forms {
+    width: 88%;
+    padding: 0;
+}
+/* FORMS */
+#form_step1 {
+    display: block;
+}
+#form_step2 {
+    display: none;
+}
+#form_step3 {
+    display: none;
+}
+/*FORM ELEMENTS*/
+.input {
+    position: relative;
+    height: 32px;
+    float: left;
+    margin: 0 0 10px 0;
+}
+.input label {
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 12px;
+    color: #000;
+    margin: 0 0 5px 0;
+    padding: 0;
+    display: block;
+    clear: both;
+}
+.input.hasLabel {
+    height: 49px;
+}
+.input.hasLabel .btn {
+    top: 17px;
+}
+.input .ws-popover .ws-po-outerbox {
+    min-width: 100px;
+    box-shadow: none !important;
+    background: transparent url(../img/error-tip-i-u.png) 14px 2px no-repeat !important;
+    padding: 6px 0 0 0 !important;
+}
+.input .ws-popover .ws-po-outerbox .ws-po-arrow {
+    display: none !important;
+    border-bottom-color: #ff6600;
+    box-shadow: none !important;
+}
+.input .ws-popover .ws-po-outerbox .ws-po-arrow .ws-po-arrowbox {
+    border-bottom-color: #ff6600;
+}
+.input .ws-popover .ws-po-outerbox .ws-po-box {
+    background: #ff6600;
+    color: #fff;
+    font-size: 10px;
+    line-height: 12px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: none !important;
+}
+.input .error-tip {
+    position: absolute;
+    z-index: 100;
+    background: #ff6600;
+    color: #fff;
+    padding: 10px;
+    font-size: 10px;
+    line-height: 12px;
+    font-weight: bold;
+    border-radius: 15px;
+    width: 100%;
+    text-align: center;
+}
+.input .error-tip .i {
+    background: transparent url(../img/error-tip-i.png) left bottom no-repeat;
+    width: 10px;
+    height: 6px;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+.input .txt {
+    position: relative;
+    float: left;
+    margin: 0;
+    padding: 5px 8px;
+    background: #fff;
+    color: #000;
+    border-radius: 2px;
+    border: 1px solid #000;
+    font-size: 14px;
+    line-height: 18px;
+    width: 100%;
+    height: 32px;
+}
+.ie8 .input .txt {
+    padding: 6px 8px;
+}
+.ie8 .input .txt:focus {
+    padding: 3.5px 6.5px;
+}
+.input .txt.number::-webkit-outer-spin-button,
+.input .txt.number::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.input .txt:focus {
+    border: 3px solid #000;
+    top: 0px;
+    padding: 1.5px 6px;
+}
+.input .txt.user-error {
+    border-color: #000 !important;
+    background: #ffe8dd;
+}
+.input .txt.user-error:required {
+    box-shadow: none;
+}
+.input .txt.user-error:invalid {
+    box-shadow: none;
+}
+.input .btn {
+    position: relative;
+    border: 0;
+    width: 100%;
+    height: 32px;
+    text-align: center;
+    background: #bebebe;
+    color: #e6e6e6;
+    padding: 0 20px;
+    margin: 0;
+    float: left;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 32px;
+    font-weight: bold;
+}
+.input .btn.active {
+    background: #00e17f;
+    color: #fff;
+}
+.input .btn.active:hover {
+    background: #00e17f;
+    color: #b8f3d2;
+}
+.input .btn.active:active {
+    background: #5deab1;
+    color: #fff;
+}
+input:-ms-input-placeholder {  
+   color: red;  
+}
+/* INPUTS */
+/* STEP 1*/
+#mobilephone {
+    padding-right: 5px;
+    width: 100%;
+    max-width: 112px;
+}
+#mobilephone input.disabled {
+    border: none;
+    background: #E8E8E8;
+    color: #666;
+}
+#btnBuy {
+    clear: right;
+    width: auto;
+    padding-left: 5px;
+}
+/* STEP 2*/
+#firstname {
+    clear: left;
+    width: 100%;
+    max-width: 162px;
+    padding-right: 5px;
+}
+#lastname {
+    clear: right;
+    width: 100%;
+    max-width: 170px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+#address {
+    clear: right;
+    width: 100%;
+    max-width: 341px;
+    padding-left: 5px;
+}
+#zipcode {
+    width: 100%;
+    max-width: 126px;
+    padding-right: 5px;
+    clear: left;
+}
+#city {
+    width: 100%;
+    max-width: 206px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+#email {
+    clear: none;
+    width: 100%;
+    max-width: 346px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+#btnAddAddress {
+    width: auto;
+    clear: right;
+    padding-left: 5px;
+}
+.firefox #btnAddAddress {
+    padding-left: 0;
+}
+/* STEP 3*/
+#sms-arrow {
+    background: transparent url(../img/PIL_50.png) center center no-repeat;
+    width: 20px;
+    margin-right: 5px;
+}
+#sms-arrow.hasLabel {
+    background-position: center 24px;
+}
+#smscode {
+    width: 57px;
+    text-align: center;
+    padding-right: 5px;
+}
+#smscode .txt {
+    text-align: center;
+}
+#btnConfirmPurchase {
+    clear: right;
+    width: auto;
+    padding-left: 5px;
+}
+/* MESSAGES */
+.messages {
+    float: left;
+    background: #e4fcf2;
+    padding: 5px;
+}
+.messages span {
+    font-size: 13px;
+    color: #000;
+    float: left;
+}
+.messages span.title {
+    font-weight: bold;
+    clear: both;
+    margin-right: 5px;
+}
+.messages a.cancelEditNumber {
+    display: none;
+    color: white;
+    margin-left: 7px;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 1px solid #FFF;
+    vertical-align: text-top;
+}
+.messages.error {
+    background: #ff6600;
+}
+.messages.error span {
+    color: #fff !important;
+    font-weight: bold !important;
+}
+/* MISC */
+.desktop-seperator {
+    border-top: 1px solid #bebebe;
+    float: left;
+    width: 100%;
+    clear: both;
+    display: block;
+    padding: 5px 0 0 0;
+    margin: 5px 0 0 0;
+}
+/* ECOM WINDOW */
+#ecomWindow {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background: transparent url(../img/e-com-bg.png) left top repeat;
+    display: none;
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+#ecomWindow .backLink {
+    text-decoration: none;
+    border-bottom: 1px solid #61ffb6;
+    color: #61ffb6;
+    font-weight: bold;
+    font-size: 14px;
+    display: none;
+}
+.standalone #ecomWindow > .inner > .backLink {
+    display: inline-block;
+    margin-top: 30px;
+}
+.iframe #ecomWindow > .backLink {
+    display: block;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+#ecomWindow .inner {
+    position: relative;
+    top: -100%;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 10%;
+    display: block;
+}
+#ecomWindow .inner .phone {
+    border: 0;
+    margin: 0 auto;
+    width: 66px;
+    margin-bottom: 25px;
+}
+#ecomWindow .inner h3 {
+    color: #fff;
+    font-size: 21px;
+    font-weight: bold;
+    margin: 0 0 30px 0;
+}
+#ecomWindow .inner p {
+    color: #fff;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0 0 0 0;
+}
+#ecomWindow .inner a {
+    text-decoration: none;
+    border-bottom: 1px solid #61ffb6;
+    color: #61ffb6;
+    font-weight: bold;
+}
+#btnBack { 
+    margin-left: 5px;
+    margin-right: 5px;
+    display: none;
+}
+#btnRetry {
+    display: none;
+}
+/* MEDIA QUERIES */
+@media all and (max-width: 973px) {
+    #btnAddAddress {
+        padding-left: 0;
+        clear: both;
+    }
+}
+@media all and (max-width: 855px) {
+    #header {
+        width: 14%;
+    }
+    #forms {
+        width: 86%;
+    }
+}
+@media all and (max-width: 810px) {
+    #address,
+    #email {
+        max-width: 250px;
+    }
+    #email {
+        padding-right: 0;
+    }
+}
+@media all and (max-width: 725px) {
+    #header {
+        width: 16%;
+    }
+    #forms {
+        width: 84%;
+    }
+}
+@media all and (max-width: 712px) {
+    #address,
+    #email {
+        padding-left: 0;
+        padding-right: 0;
+        clear: both;
+        max-width: 327px;
+    }
+}
+@media all and (max-width: 574px) {
+    #header {
+        width: 22%;
+    }
+    #forms {
+        width: 78%;
+    }
+}
+@media all and (max-width: 484px) {
+    #header {
+        width: 100%;
+        border: 0;
+        padding-right: 0;
+        border-bottom: 1px solid #bebebe;
+    }
+    #header .messages {
+        display: block;
+    }
+    #forms {
+        width: 100%;
+        padding: 10px 0;
+    }
+    .desktop-seperator {
+        display: none !important;
+    }
+    .messages {
+        float: left;
+        clear: both;
+    }
+    .messages span {
+        font-size: 10px;
+    }
+    .messages.desktop {
+        display: none;
+    }
+    .messages a.cancelEditNumber {
+        float: right;
+        margin-left: 0px;
+        font-size: 10px;
+    }
+    /* INPUTS */
+    .input {
+        margin-bottom: 5px;
+    }
+    #manualAppLaunch {
+        width: 100%;
+    }
+    /* INPUTS */
+    /* STEP 1*/
+    #mobilephone {
+        width: 112px;
+    }
+    #btnBuy {
+        width: 100%;
+        max-width: 100%;
+        margin-top: 5px;
+        clear: both;
+        padding: 0;
+    }
+    #btnBuy.hasLabel {
+        height: auto;
+    }
+    #btnBuy .btn {
+        top: 0;
+    }
+    /* STEP 2*/
+    #firstname {
+        clear: left;
+        width: 50%;
+        max-width: 50%;
+        padding: 0 2.5px 0 0;
+    }
+    #lastname {
+        width: 50%;
+        max-width: 50%;
+        padding: 0 0 0 2.5px;
+    }
+    #address {
+        width: 100%;
+        max-width: 100%;
+    }
+    #zipcode {
+        width: 30%;
+        max-width: 30%;
+        padding: 0 2.5px 0 0;
+    }
+    #city {
+        width: 70%;
+        max-width: 70%;
+        padding: 0 0 0 2.5px;
+    }
+    #email {
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+    }
+    #btnAddAddress {
+        width: 100%;
+        max-width: 100%;
+        margin-top: 5px;
+        clear: both;
+        padding: 0;
+    }
+    /* STEP 3*/
+    #btnConfirmPurchase {
+        width: 100%;
+        max-width: 100%;
+        margin-top: 5px;
+        clear: both;
+        padding: 0;
+    }
+    #btnConfirmPurchase.hasLabel {
+        height: auto;
+    }
+    #btnConfirmPurchase .btn {
+        top: 0;
+    }
+    #btnBack {
+        clear: left;
+        width: 48%;
+        margin-right: 2%;
+    }
+    #btnRetry {
+        width: 48%;
+    }
+}
