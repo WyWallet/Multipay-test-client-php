@@ -1,7 +1,8 @@
 <?php
+header('Content-Type: text/html; charset=utf-8');
+require_once dirname(__FILE__) . '/../include/Helpers.php';
+require_once dirname(__FILE__) . '/../include/Config.php';
 
-require_once '../include/Helpers.php';
-require_once '../include/Config.php';
 require('HTTP/httpful.phar');
 
   class Client {
@@ -60,11 +61,11 @@ require('HTTP/httpful.phar');
         $uri =  $this->endpoint . 'payments/';
         #echo $uri;
 
+        $UTFdescription = utf8_decode($description);
         /* Generate HMAC */
-        $concatenatedParameters = $merchantId . $transmissionTime . $merchantOrderId . $isImmediate . $amount . $vat . $vatFormat . $currency . $description . $secretKey;
-        //echo 'HMAC string: ' . $concatenatedParameters;
+        $concatenatedParameters = $merchantId . $transmissionTime . $merchantOrderId . $isImmediate . $amount . $vat . $vatFormat . $currency . $UTFdescription . $secretKey;
         $hmac = generateHMAC($concatenatedParameters);
-        //echo 'HMAC: ' . $hmac;
+
         unset($payment['transaction']['secretKey']);
 
         /* Add optional parameters to payload */
